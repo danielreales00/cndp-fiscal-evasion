@@ -36,7 +36,7 @@ Juan David Ceballos \\
 \maketitle
 
 \begin{abstract}
-The Critical Node Detection Problem (CNDP) seeks to identify a set of $k$ nodes whose removal from a graph maximally disrupts connectivity, measured by minimizing the number of remaining connected node pairs. This problem is NP-complete and arises naturally in domains where targeted disruption of network infrastructure is required. We implement the Integer Linear Programming (ILP) formulation of Arulselvan et al.\ (2009), which guarantees optimal solutions but is limited to small instances ($n \leq 62$) due to $O(n^3)$ transitivity constraints. We design a Multi-Start Iterated Local Search (MS-ILS) heuristic that combines greedy initialization strategies with swap-based local search and perturbation. We evaluate both algorithms alongside IRMS, the state-of-the-art memetic search by Zhou et al.\ (2023), on 12 benchmark instances from the literature and 4 real-world fiscal evasion networks extracted from the ICIJ Offshore Leaks database (Panama Papers). On sparse networks such as the Colombian offshore evasion graphs, MS-ILS matches IRMS solution quality (0.0--2.7\% gap) while remaining simple to implement. On dense instances ($n > 1000$), IRMS's instance reduction technique provides significant advantages. All implementations are in C++17 with HiGHS as the ILP solver. Code and data are available at \url{https://github.com/danielreales00/cndp-fiscal-evasion}.
+The Critical Node Detection Problem (CNDP) seeks to identify a set of $k$ nodes whose removal from a graph maximally disrupts connectivity, measured by minimizing the number of remaining connected node pairs. This problem is NP-complete and arises naturally in domains where targeted disruption of network infrastructure is required. We implement the Integer Linear Programming (ILP) formulation of Arulselvan et al.\ (2009), which guarantees optimal solutions but is limited to small instances ($n \leq 62$) due to exponential branch-and-bound search over $O(n^2)$ binary variables. We design a Multi-Start Iterated Local Search (MS-ILS) heuristic that combines greedy initialization strategies with swap-based local search and perturbation. We evaluate both algorithms alongside IRMS, the state-of-the-art memetic search by Zhou et al.\ (2023), on 12 benchmark instances from the literature and 4 real-world fiscal evasion networks extracted from the ICIJ Offshore Leaks database (Panama Papers). On sparse networks such as the Colombian offshore evasion graphs, MS-ILS matches IRMS solution quality (0.0--2.7\% gap) while remaining simple to implement. On dense instances ($n > 1000$), IRMS's instance reduction technique provides significant advantages. All implementations are in C++17 with HiGHS as the ILP solver. Code and data are available at \url{https://github.com/danielreales00/cndp-fiscal-evasion}.
 \end{abstract}
 
 % ============================================================================
@@ -46,7 +46,7 @@ Many real-world problems require identifying the most critical components of a n
 
 The \textbf{Critical Node Detection Problem} (CNDP) formalizes this question: given an undirected graph $G = (V, E)$ and a budget $k$, find a set $S \subseteq V$ with $|S| = k$ whose removal minimizes the number of connected node pairs in the residual graph $G[V \setminus S]$. Arulselvan et al.~\cite{arulselvan2009} proved CNDP is NP-complete and proposed an Integer Linear Programming (ILP) formulation that yields optimal solutions.
 
-While the ILP provides exact solutions, it requires $O(n^2)$ binary variables and $O(n^3)$ transitivity constraints, making it infeasible for graphs with more than approximately 60--80 nodes on modern hardware. This motivates the development of heuristic approaches that sacrifice optimality guarantees for scalability.
+While the ILP provides exact solutions, solving it requires branch-and-bound over $O(n^2)$ binary variables---worst-case exponential time. The $O(n^3)$ transitivity constraints further slow each LP relaxation within the search tree, making the approach infeasible for $n > 60$ on modern hardware. This motivates heuristic approaches that sacrifice optimality guarantees for scalability.
 
 We contribute: (1) an implementation of the ILP formulation~\cite{arulselvan2009} with characterization of its practical limits; (2) a Multi-Start ILS heuristic combining degree, betweenness, and greedy initializations with swap-based local search; (3) application to fiscal evasion network disruption using ICIJ Offshore Leaks data~\cite{icij2021}; and (4) benchmarks against IRMS~\cite{zhou2023} on 12 literature instances and 4 Colombian evasion networks.
 
@@ -131,7 +131,9 @@ Constraint~\eqref{eq:budget} enforces the budget. Constraints~\eqref{eq:delete_i
 
 \subsection{Correctness and Complexity}
 
-The ILP is correct by construction: the transitivity constraints ensure $u_{ij} = 1$ whenever $i$ and $j$ remain connected via any path, preventing undercounting. The formulation has $O(n^2)$ variables and $O(n^3)$ constraints (one per ordered triple). Table~\ref{tab:ilp_scaling} shows observed solve times; beyond $n = 62$, the ILP becomes impractical on consumer hardware.
+The ILP is correct by construction: the transitivity constraints ensure $u_{ij} = 1$ whenever $i$ and $j$ remain connected via any path, preventing undercounting.
+
+\paragraph{Formulation size vs.\ solving time.} The formulation has $O(n^2)$ binary variables and $O(n^3)$ transitivity constraints---polynomial to \emph{write down}. However, solving a binary ILP is NP-hard: branch-and-bound explores up to $2^{O(n^2)}$ search tree nodes, each requiring an LP relaxation over the $O(n^3)$ constraints. It is this exponential search, not the polynomial formulation size, that limits the ILP to small $n$. Table~\ref{tab:ilp_scaling} shows the empirical boundary.
 
 \begin{table}[ht]
 \centering
@@ -332,7 +334,7 @@ Following Zhou et al.~\cite{zhou2023}, we set $k \in \{0.05n, 0.10n, 0.15n\}$. W
 
 \subsection{ILP Feasibility Boundary}
 
-The ILP solved karate ($n = 34$) in 0.63s and dolphins ($n = 62$) in 60s; football ($n = 115$) timed out at 180s. All 16 benchmark instances have $n > 120$, confirming the $O(n^3)$ intractability. Subsequent comparisons focus on heuristic methods.
+The ILP solved karate ($n = 34$) in 0.63s and dolphins ($n = 62$) in 60s; football ($n = 115$) timed out at 180s. The exponential growth in branch-and-bound search time confirms that all 16 benchmark instances ($n > 120$) are beyond the ILP's reach. Subsequent comparisons focus on heuristic methods.
 
 \subsection{Benchmark Results on IRMS Instances}
 
@@ -431,7 +433,7 @@ As shown in Table~\ref{tab:results_large}, MS-ILS time grows roughly as $O(n^2)$
 % ============================================================================
 \section{Conclusions}
 
-We compared three CNDP approaches: the exact ILP (limited to $n \leq 62$ due to $O(n^3)$ constraints), our MS-ILS heuristic, and IRMS (state-of-the-art). MS-ILS matches IRMS on sparse networks (0\% gap on all Colombian fiscal evasion components) but degrades on dense graphs where IRMS's $O(\text{degree})$ incremental evaluation dominates our $O(n+m)$ recomputation.
+We compared three CNDP approaches: the exact ILP (limited to $n \leq 62$ due to exponential branch-and-bound), our MS-ILS heuristic, and IRMS (state-of-the-art). MS-ILS matches IRMS on sparse networks (0\% gap on all Colombian fiscal evasion components) but degrades on dense graphs where IRMS's $O(\text{degree})$ incremental evaluation dominates our $O(n+m)$ recomputation.
 
 Applied to ICIJ Offshore Leaks data, CNDP identifies hub intermediaries as critical nodes---removing 20 nodes from a 413-node evasion cluster achieves 99.6\% reduction in connected pairs, demonstrating practical applicability to financial crime disruption. Future work: implementing incremental evaluation to close the gap on dense instances.
 
