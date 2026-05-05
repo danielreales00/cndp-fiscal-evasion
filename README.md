@@ -3,6 +3,7 @@
 **Solving the Critical Node Detection Problem: An ILP Formulation and a Multi-Start Iterated Local Search Heuristic Applied to Fiscal Evasion Networks**
 
 Daniel Reales — Universidad de los Andes, ISIS4208 Análisis de Algoritmos (2026-10)
+
 Juan David Ceballos — Universidad de los Andes, ISIS4208 Análisis de Algoritmos (2026-10)
 
 ## Overview
