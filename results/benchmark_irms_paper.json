@@ -1,0 +1,902 @@
+[
+  {
+    "instance": "Bovine",
+    "n": 121,
+    "k": 6,
+    "degree": {
+      "obj": 30,
+      "time": 4.875e-06
+    },
+    "betweenness": {
+      "obj": 180,
+      "time": 0.000546917
+    },
+    "greedy": {
+      "obj": 30,
+      "time": 0.000363542
+    },
+    "ms_ils": {
+      "obj": 30,
+      "time": 0.0107344
+    },
+    "irms": {
+      "obj": 30,
+      "time": 0.000136
+    }
+  },
+  {
+    "instance": "Bovine",
+    "n": 121,
+    "k": 12,
+    "degree": {
+      "obj": 18,
+      "time": 4.75e-06
+    },
+    "betweenness": {
+      "obj": 44,
+      "time": 0.000665833
+    },
+    "greedy": {
+      "obj": 1,
+      "time": 0.000384125
+    },
+    "ms_ils": {
+      "obj": 1,
+      "time": 0.011857
+    },
+    "irms": {
+      "obj": 1,
+      "time": 6.322048
+    }
+  },
+  {
+    "instance": "Bovine",
+    "n": 121,
+    "k": 18,
+    "degree": {
+      "obj": 4,
+      "time": 4.959e-06
+    },
+    "betweenness": {
+      "obj": 42,
+      "time": 0.000490375
+    },
+    "greedy": {
+      "obj": 0,
+      "time": 0.000387208
+    },
+    "ms_ils": {
+      "obj": 0,
+      "time": 0.00969813
+    },
+    "irms": {
+      "obj": 0,
+      "time": 0.172798
+    }
+  },
+  {
+    "instance": "Circuit",
+    "n": 252,
+    "k": 12,
+    "degree": {
+      "obj": 25230,
+      "time": 1.3125e-05
+    },
+    "betweenness": {
+      "obj": 28680,
+      "time": 0.0025145
+    },
+    "greedy": {
+      "obj": 23238,
+      "time": 0.0143258
+    },
+    "ms_ils": {
+      "obj": 9192,
+      "time": 0.115938
+    },
+    "irms": {
+      "obj": 7780,
+      "time": 6.942275
+    }
+  },
+  {
+    "instance": "Circuit",
+    "n": 252,
+    "k": 25,
+    "degree": {
+      "obj": 12856,
+      "time": 1.2833e-05
+    },
+    "betweenness": {
+      "obj": 24320,
+      "time": 0.00249692
+    },
+    "greedy": {
+      "obj": 17230,
+      "time": 0.0261086
+    },
+    "ms_ils": {
+      "obj": 2117,
+      "time": 0.186114
+    },
+    "irms": {
+      "obj": 2099,
+      "time": 0.577161
+    }
+  },
+  {
+    "instance": "Circuit",
+    "n": 252,
+    "k": 37,
+    "degree": {
+      "obj": 3396,
+      "time": 1.275e-05
+    },
+    "betweenness": {
+      "obj": 6897,
+      "time": 0.00250304
+    },
+    "greedy": {
+      "obj": 4746,
+      "time": 0.032461
+    },
+    "ms_ils": {
+      "obj": 787,
+      "time": 0.264344
+    },
+    "irms": {
+      "obj": 775,
+      "time": 0.001155
+    }
+  },
+  {
+    "instance": "Ecoli",
+    "n": 328,
+    "k": 16,
+    "degree": {
+      "obj": 869,
+      "time": 1.725e-05
+    },
+    "betweenness": {
+      "obj": 5058,
+      "time": 0.00360217
+    },
+    "greedy": {
+      "obj": 746,
+      "time": 0.00643533
+    },
+    "ms_ils": {
+      "obj": 625,
+      "time": 0.163574
+    },
+    "irms": {
+      "obj": 625,
+      "time": 0.000927
+    }
+  },
+  {
+    "instance": "Ecoli",
+    "n": 328,
+    "k": 32,
+    "degree": {
+      "obj": 142,
+      "time": 1.4958e-05
+    },
+    "betweenness": {
+      "obj": 1072,
+      "time": 0.00360317
+    },
+    "greedy": {
+      "obj": 96,
+      "time": 0.00696471
+    },
+    "ms_ils": {
+      "obj": 96,
+      "time": 0.165641
+    },
+    "irms": {
+      "obj": 96,
+      "time": 0.000788
+    }
+  },
+  {
+    "instance": "Ecoli",
+    "n": 328,
+    "k": 49,
+    "degree": {
+      "obj": 55,
+      "time": 1.45e-05
+    },
+    "betweenness": {
+      "obj": 139,
+      "time": 0.00363167
+    },
+    "greedy": {
+      "obj": 24,
+      "time": 0.00725613
+    },
+    "ms_ils": {
+      "obj": 23,
+      "time": 0.174278
+    },
+    "irms": {
+      "obj": 23,
+      "time": 4.766962
+    }
+  },
+  {
+    "instance": "USAir97",
+    "n": 332,
+    "k": 16,
+    "degree": {
+      "obj": 32138,
+      "time": 2.4542e-05
+    },
+    "betweenness": {
+      "obj": 21251,
+      "time": 0.00969833
+    },
+    "greedy": {
+      "obj": 20124,
+      "time": 0.0418918
+    },
+    "ms_ils": {
+      "obj": 16401,
+      "time": 0.533335
+    },
+    "irms": {
+      "obj": 16401,
+      "time": 24.447005
+    }
+  },
+  {
+    "instance": "USAir97",
+    "n": 332,
+    "k": 33,
+    "degree": {
+      "obj": 24321,
+      "time": 2.0292e-05
+    },
+    "betweenness": {
+      "obj": 11024,
+      "time": 0.00795354
+    },
+    "greedy": {
+      "obj": 7623,
+      "time": 0.0625732
+    },
+    "ms_ils": {
+      "obj": 5444,
+      "time": 0.739758
+    },
+    "irms": {
+      "obj": 5444,
+      "time": 0.005139
+    }
+  },
+  {
+    "instance": "USAir97",
+    "n": 332,
+    "k": 49,
+    "degree": {
+      "obj": 3971,
+      "time": 2.0208e-05
+    },
+    "betweenness": {
+      "obj": 7998,
+      "time": 0.00799096
+    },
+    "greedy": {
+      "obj": 3321,
+      "time": 0.0723382
+    },
+    "ms_ils": {
+      "obj": 1264,
+      "time": 0.907366
+    },
+    "irms": {
+      "obj": 1155,
+      "time": 5.245301
+    }
+  },
+  {
+    "instance": "Treni_Roma",
+    "n": 255,
+    "k": 12,
+    "degree": {
+      "obj": 19235,
+      "time": 8.709e-06
+    },
+    "betweenness": {
+      "obj": 17947,
+      "time": 0.00183725
+    },
+    "greedy": {
+      "obj": 3030,
+      "time": 0.00341817
+    },
+    "ms_ils": {
+      "obj": 2506,
+      "time": 0.0969073
+    },
+    "irms": {
+      "obj": 2506,
+      "time": 0.00038
+    }
+  },
+  {
+    "instance": "Treni_Roma",
+    "n": 255,
+    "k": 25,
+    "degree": {
+      "obj": 7294,
+      "time": 9.375e-06
+    },
+    "betweenness": {
+      "obj": 15919,
+      "time": 0.00182442
+    },
+    "greedy": {
+      "obj": 1159,
+      "time": 0.00466821
+    },
+    "ms_ils": {
+      "obj": 982,
+      "time": 0.102985
+    },
+    "irms": {
+      "obj": 973,
+      "time": 18.606054
+    }
+  },
+  {
+    "instance": "Treni_Roma",
+    "n": 255,
+    "k": 38,
+    "degree": {
+      "obj": 2509,
+      "time": 9.75e-06
+    },
+    "betweenness": {
+      "obj": 13647,
+      "time": 0.00178833
+    },
+    "greedy": {
+      "obj": 546,
+      "time": 0.00535054
+    },
+    "ms_ils": {
+      "obj": 505,
+      "time": 0.119946
+    },
+    "irms": {
+      "obj": 497,
+      "time": 0.752638
+    }
+  },
+  {
+    "instance": "humanDiseasome",
+    "n": 516,
+    "k": 25,
+    "degree": {
+      "obj": 11870,
+      "time": 2.6417e-05
+    },
+    "betweenness": {
+      "obj": 10199,
+      "time": 0.00913154
+    },
+    "greedy": {
+      "obj": 4556,
+      "time": 0.0299545
+    },
+    "ms_ils": {
+      "obj": 3366,
+      "time": 0.503385
+    },
+    "irms": {
+      "obj": 3366,
+      "time": 2.898782
+    }
+  },
+  {
+    "instance": "humanDiseasome",
+    "n": 516,
+    "k": 51,
+    "degree": {
+      "obj": 2755,
+      "time": 2.6667e-05
+    },
+    "betweenness": {
+      "obj": 2380,
+      "time": 0.00908192
+    },
+    "greedy": {
+      "obj": 1232,
+      "time": 0.0345841
+    },
+    "ms_ils": {
+      "obj": 1147,
+      "time": 0.549307
+    },
+    "irms": {
+      "obj": 1148,
+      "time": 0.001838
+    }
+  },
+  {
+    "instance": "humanDiseasome",
+    "n": 516,
+    "k": 77,
+    "degree": {
+      "obj": 1473,
+      "time": 2.6292e-05
+    },
+    "betweenness": {
+      "obj": 1655,
+      "time": 0.00934692
+    },
+    "greedy": {
+      "obj": 618,
+      "time": 0.0393001
+    },
+    "ms_ils": {
+      "obj": 604,
+      "time": 0.574667
+    },
+    "irms": {
+      "obj": 604,
+      "time": 0.02717
+    }
+  },
+  {
+    "instance": "Hamilton1000",
+    "n": 1000,
+    "k": 50,
+    "degree": {
+      "obj": 449826,
+      "time": 2.3208e-05
+    },
+    "betweenness": {
+      "obj": 448878,
+      "time": 0.0504265
+    },
+    "greedy": {
+      "obj": 446040,
+      "time": 1.84885
+    },
+    "ms_ils": {
+      "obj": 436651,
+      "time": 3.1427
+    },
+    "irms": {
+      "obj": 406814,
+      "time": 13.862094
+    }
+  },
+  {
+    "instance": "Hamilton1000",
+    "n": 1000,
+    "k": 100,
+    "degree": {
+      "obj": 401856,
+      "time": 2.3625e-05
+    },
+    "betweenness": {
+      "obj": 402753,
+      "time": 0.051231
+    },
+    "greedy": {
+      "obj": 385004,
+      "time": 3.62602
+    },
+    "ms_ils": {
+      "obj": 365134,
+      "time": 7.677
+    },
+    "irms": {
+      "obj": 311042,
+      "time": 26.757355
+    }
+  },
+  {
+    "instance": "Hamilton1000",
+    "n": 1000,
+    "k": 150,
+    "degree": {
+      "obj": 349033,
+      "time": 2.3e-05
+    },
+    "betweenness": {
+      "obj": 358281,
+      "time": 0.0504891
+    },
+    "greedy": {
+      "obj": 319604,
+      "time": 5.19487
+    },
+    "ms_ils": {
+      "obj": 270792,
+      "time": 12.0834
+    },
+    "irms": {
+      "obj": 219212,
+      "time": 28.957171
+    }
+  },
+  {
+    "instance": "EU_flights",
+    "n": 1191,
+    "k": 59,
+    "degree": {
+      "obj": 619943,
+      "time": 0.00011
+    },
+    "betweenness": {
+      "obj": 530975,
+      "time": 0.272897
+    },
+    "greedy": {
+      "obj": 474849,
+      "time": 9.91305
+    },
+    "ms_ils": {
+      "obj": 470966,
+      "time": 40.8844
+    },
+    "irms": {
+      "obj": 465171,
+      "time": 6.451855
+    }
+  },
+  {
+    "instance": "EU_flights",
+    "n": 1191,
+    "k": 119,
+    "degree": {
+      "obj": 500507,
+      "time": 0.000110292
+    },
+    "betweenness": {
+      "obj": 420000,
+      "time": 0.281684
+    },
+    "greedy": {
+      "obj": 360001,
+      "time": 22.1126
+    },
+    "ms_ils": {
+      "obj": 358312,
+      "time": 54.7852
+    },
+    "irms": {
+      "obj": 350762,
+      "time": 10.444595
+    }
+  },
+  {
+    "instance": "EU_flights",
+    "n": 1191,
+    "k": 178,
+    "degree": {
+      "obj": 421828,
+      "time": 0.000100375
+    },
+    "betweenness": {
+      "obj": 341566,
+      "time": 0.273483
+    },
+    "greedy": {
+      "obj": 283153,
+      "time": 33.1926
+    },
+    "ms_ils": {
+      "obj": 272002,
+      "time": 88.2014
+    },
+    "irms": {
+      "obj": 257476,
+      "time": 22.829231
+    }
+  },
+  {
+    "instance": "openflights",
+    "n": 1858,
+    "k": 92,
+    "degree": {
+      "obj": 502531,
+      "time": 0.000120125
+    },
+    "betweenness": {
+      "obj": 355834,
+      "time": 0.248251
+    },
+    "greedy": {
+      "obj": 285798,
+      "time": 9.66568
+    },
+    "ms_ils": {
+      "obj": 199420,
+      "time": 35.9037
+    },
+    "irms": {
+      "obj": 159655,
+      "time": 18.179113
+    }
+  },
+  {
+    "instance": "openflights",
+    "n": 1858,
+    "k": 185,
+    "degree": {
+      "obj": 263973,
+      "time": 0.000112708
+    },
+    "betweenness": {
+      "obj": 168133,
+      "time": 0.250928
+    },
+    "greedy": {
+      "obj": 57532,
+      "time": 15.2284
+    },
+    "ms_ils": {
+      "obj": 44242,
+      "time": 21.3879
+    },
+    "irms": {
+      "obj": 29669,
+      "time": 18.158523
+    }
+  },
+  {
+    "instance": "openflights",
+    "n": 1858,
+    "k": 278,
+    "degree": {
+      "obj": 49558,
+      "time": 0.0001055
+    },
+    "betweenness": {
+      "obj": 49287,
+      "time": 0.247405
+    },
+    "greedy": {
+      "obj": 13293,
+      "time": 14.7777
+    },
+    "ms_ils": {
+      "obj": 8549,
+      "time": 21.5972
+    },
+    "irms": {
+      "obj": 1580,
+      "time": 10.366808
+    }
+  },
+  {
+    "instance": "yeast1",
+    "n": 2018,
+    "k": 100,
+    "degree": {
+      "obj": 198609,
+      "time": 9.5792e-05
+    },
+    "betweenness": {
+      "obj": 320494,
+      "time": 0.134181
+    },
+    "greedy": {
+      "obj": 108225,
+      "time": 3.29974
+    },
+    "ms_ils": {
+      "obj": 51795,
+      "time": 5.32192
+    },
+    "irms": {
+      "obj": 8317,
+      "time": 2.863313
+    }
+  },
+  {
+    "instance": "yeast1",
+    "n": 2018,
+    "k": 201,
+    "degree": {
+      "obj": 3096,
+      "time": 9.4334e-05
+    },
+    "betweenness": {
+      "obj": 10926,
+      "time": 0.140161
+    },
+    "greedy": {
+      "obj": 1576,
+      "time": 3.5113
+    },
+    "ms_ils": {
+      "obj": 1449,
+      "time": 13.255
+    },
+    "irms": {
+      "obj": 1426,
+      "time": 2.912292
+    }
+  },
+  {
+    "instance": "yeast1",
+    "n": 2018,
+    "k": 302,
+    "degree": {
+      "obj": 1454,
+      "time": 9.3791e-05
+    },
+    "betweenness": {
+      "obj": 1846,
+      "time": 0.135947
+    },
+    "greedy": {
+      "obj": 691,
+      "time": 3.45904
+    },
+    "ms_ils": {
+      "obj": 643,
+      "time": 22.5019
+    },
+    "irms": {
+      "obj": 635,
+      "time": 23.037241
+    }
+  },
+  {
+    "instance": "facebook",
+    "n": 4039,
+    "k": 201,
+    "degree": {
+      "obj": 7025653,
+      "time": 0.000445792
+    },
+    "betweenness": {
+      "obj": 1443415,
+      "time": 1.34881
+    },
+    "greedy": {
+      "obj": -1,
+      "time": 60
+    },
+    "ms_ils": {
+      "obj": -1,
+      "time": 600
+    },
+    "irms": {
+      "obj": 1909704,
+      "time": 46.16822
+    }
+  },
+  {
+    "instance": "facebook",
+    "n": 4039,
+    "k": 403,
+    "degree": {
+      "obj": 6285312,
+      "time": 0.000385375
+    },
+    "betweenness": {
+      "obj": 1216656,
+      "time": 1.34226
+    },
+    "greedy": {
+      "obj": -1,
+      "time": 60
+    },
+    "ms_ils": {
+      "obj": 1002905,
+      "time": 435.934
+    },
+    "irms": {
+      "obj": 869641,
+      "time": 52.615904
+    }
+  },
+  {
+    "instance": "facebook",
+    "n": 4039,
+    "k": 605,
+    "degree": {
+      "obj": 4101148,
+      "time": 0.000359708
+    },
+    "betweenness": {
+      "obj": 908610,
+      "time": 1.34045
+    },
+    "greedy": {
+      "obj": -1,
+      "time": 60
+    },
+    "ms_ils": {
+      "obj": -1,
+      "time": 600
+    },
+    "irms": {
+      "obj": 623606,
+      "time": 58.41128
+    }
+  },
+  {
+    "instance": "powergrid",
+    "n": 4941,
+    "k": 247,
+    "degree": {
+      "obj": 3708906,
+      "time": 0.000247042
+    },
+    "betweenness": {
+      "obj": 3646407,
+      "time": 1.02537
+    },
+    "greedy": {
+      "obj": 288373,
+      "time": 51.7976
+    },
+    "ms_ils": {
+      "obj": 199993,
+      "time": 58.83
+    },
+    "irms": {
+      "obj": 66908,
+      "time": 45.987081
+    }
+  },
+  {
+    "instance": "powergrid",
+    "n": 4941,
+    "k": 494,
+    "degree": {
+      "obj": 571969,
+      "time": 0.000247875
+    },
+    "betweenness": {
+      "obj": 421895,
+      "time": 1.02546
+    },
+    "greedy": {
+      "obj": 21577,
+      "time": 52.744
+    },
+    "ms_ils": {
+      "obj": 19900,
+      "time": 81.3335
+    },
+    "irms": {
+      "obj": 15866,
+      "time": 58.763564
+    }
+  },
+  {
+    "instance": "powergrid",
+    "n": 4941,
+    "k": 741,
+    "degree": {
+      "obj": 48477,
+      "time": 0.00026375
+    },
+    "betweenness": {
+      "obj": 116355,
+      "time": 1.0134
+    },
+    "greedy": {
+      "obj": 7431,
+      "time": 55.1355
+    },
+    "ms_ils": {
+      "obj": 7223,
+      "time": 96.418
+    },
+    "irms": {
+      "obj": 6424,
+      "time": 53.185298
+    }
+  }
+]

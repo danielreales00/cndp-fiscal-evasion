@@ -1,0 +1,302 @@
+[
+  {
+    "instance": "colombia_comp0",
+    "n": 413,
+    "k": 20,
+    "degree": {
+      "obj": 375,
+      "time": 1.4083e-05
+    },
+    "betweenness": {
+      "obj": 447,
+      "time": 0.00464304
+    },
+    "greedy": {
+      "obj": 373,
+      "time": 0.00290504
+    },
+    "ms_ils": {
+      "obj": 359,
+      "time": 0.166657
+    },
+    "irms": {
+      "obj": 359,
+      "time": 2.425246
+    }
+  },
+  {
+    "instance": "colombia_comp0",
+    "n": 413,
+    "k": 41,
+    "degree": {
+      "obj": 161,
+      "time": 1.3542e-05
+    },
+    "betweenness": {
+      "obj": 197,
+      "time": 0.00468775
+    },
+    "greedy": {
+      "obj": 160,
+      "time": 0.00376904
+    },
+    "ms_ils": {
+      "obj": 139,
+      "time": 0.237452
+    },
+    "irms": {
+      "obj": 139,
+      "time": 1.022633
+    }
+  },
+  {
+    "instance": "colombia_comp0",
+    "n": 413,
+    "k": 61,
+    "degree": {
+      "obj": 57,
+      "time": 1.3167e-05
+    },
+    "betweenness": {
+      "obj": 91,
+      "time": 0.00448037
+    },
+    "greedy": {
+      "obj": 44,
+      "time": 0.00417242
+    },
+    "ms_ils": {
+      "obj": 39,
+      "time": 0.210191
+    },
+    "irms": {
+      "obj": 39,
+      "time": 16.686642
+    }
+  },
+  {
+    "instance": "colombia_comp1",
+    "n": 339,
+    "k": 16,
+    "degree": {
+      "obj": 302,
+      "time": 1.3e-05
+    },
+    "betweenness": {
+      "obj": 349,
+      "time": 0.00305879
+    },
+    "greedy": {
+      "obj": 297,
+      "time": 0.00188783
+    },
+    "ms_ils": {
+      "obj": 297,
+      "time": 0.11011
+    },
+    "irms": {
+      "obj": 297,
+      "time": 0.00026
+    }
+  },
+  {
+    "instance": "colombia_comp1",
+    "n": 339,
+    "k": 33,
+    "degree": {
+      "obj": 126,
+      "time": 1.2083e-05
+    },
+    "betweenness": {
+      "obj": 195,
+      "time": 0.0031155
+    },
+    "greedy": {
+      "obj": 117,
+      "time": 0.00244871
+    },
+    "ms_ils": {
+      "obj": 117,
+      "time": 0.127934
+    },
+    "irms": {
+      "obj": 117,
+      "time": 0.00051
+    }
+  },
+  {
+    "instance": "colombia_comp1",
+    "n": 339,
+    "k": 50,
+    "degree": {
+      "obj": 48,
+      "time": 1.2458e-05
+    },
+    "betweenness": {
+      "obj": 48,
+      "time": 0.00311963
+    },
+    "greedy": {
+      "obj": 42,
+      "time": 0.00272271
+    },
+    "ms_ils": {
+      "obj": 42,
+      "time": 0.107937
+    },
+    "irms": {
+      "obj": 42,
+      "time": 0.000775
+    }
+  },
+  {
+    "instance": "colombia_full",
+    "n": 3429,
+    "k": 171,
+    "degree": {
+      "obj": 2862,
+      "time": 0.000108
+    },
+    "betweenness": {
+      "obj": 3909,
+      "time": 0.0348193
+    },
+    "greedy": {
+      "obj": 2780,
+      "time": 0.163244
+    },
+    "ms_ils": {
+      "obj": 2768,
+      "time": 31.1398
+    },
+    "irms": {
+      "obj": 2757,
+      "time": 12.293278
+    }
+  },
+  {
+    "instance": "colombia_full",
+    "n": 3429,
+    "k": 342,
+    "degree": {
+      "obj": 1297,
+      "time": 0.000123
+    },
+    "betweenness": {
+      "obj": 1833,
+      "time": 0.0374948
+    },
+    "greedy": {
+      "obj": 1288,
+      "time": 0.273507
+    },
+    "ms_ils": {
+      "obj": 1250,
+      "time": 57.3274
+    },
+    "irms": {
+      "obj": 1249,
+      "time": 7.991646
+    }
+  },
+  {
+    "instance": "colombia_full",
+    "n": 3429,
+    "k": 514,
+    "degree": {
+      "obj": 601,
+      "time": 0.000105916
+    },
+    "betweenness": {
+      "obj": 1096,
+      "time": 0.0347394
+    },
+    "greedy": {
+      "obj": 556,
+      "time": 0.282829
+    },
+    "ms_ils": {
+      "obj": 536,
+      "time": 97.5992
+    },
+    "irms": {
+      "obj": 534,
+      "time": 1.283558
+    }
+  },
+  {
+    "instance": "colombia_all",
+    "n": 5847,
+    "k": 292,
+    "degree": {
+      "obj": 6152,
+      "time": 0.000181833
+    },
+    "betweenness": {
+      "obj": 19179,
+      "time": 0.0559702
+    },
+    "greedy": {
+      "obj": 5528,
+      "time": 0.477525
+    },
+    "ms_ils": {
+      "obj": 5498,
+      "time": 229.403
+    },
+    "irms": {
+      "obj": 5484,
+      "time": 9.302378
+    }
+  },
+  {
+    "instance": "colombia_all",
+    "n": 5847,
+    "k": 584,
+    "degree": {
+      "obj": 2784,
+      "time": 0.000191042
+    },
+    "betweenness": {
+      "obj": 9940,
+      "time": 0.0557434
+    },
+    "greedy": {
+      "obj": 2543,
+      "time": 0.742356
+    },
+    "ms_ils": {
+      "obj": 2510,
+      "time": 134.827
+    },
+    "irms": {
+      "obj": 2453,
+      "time": 20.765462
+    }
+  },
+  {
+    "instance": "colombia_all",
+    "n": 5847,
+    "k": 877,
+    "degree": {
+      "obj": 1314,
+      "time": 0.000189459
+    },
+    "betweenness": {
+      "obj": 5341,
+      "time": 0.0560251
+    },
+    "greedy": {
+      "obj": 1151,
+      "time": 0.888607
+    },
+    "ms_ils": {
+      "obj": 1133,
+      "time": 421.526
+    },
+    "irms": {
+      "obj": 1103,
+      "time": 6.635287
+    }
+  }
+]

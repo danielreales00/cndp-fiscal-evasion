@@ -1,0 +1,31 @@
+# Compiled binaries
+src/cpp/cndp_solver
+src/cpp/irms
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# Large raw ICIJ data (667MB) — download instructions in README
+data/icij/
+
+# IRMS repo (cloned separately — instructions in README)
+irms_repo/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+
+# Editor
+*.swp
+*.swo
